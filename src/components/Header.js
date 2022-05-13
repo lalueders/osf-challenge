@@ -66,7 +66,7 @@ const TextWrapper = styled.div`
   background: #0091cd;
   position: absolute;
   left: 0;
-  height: 234px;
+  height: 200px;
   width: 30%;
   z-index: 1;
   margin-right: 4rem;
