@@ -102,7 +102,7 @@ form {
   gap: 1rem;
 }
 
-input {
+input, select {
   background: inherit;
   font-size: 14px;
   font-family: inherit;
@@ -110,13 +110,8 @@ input {
   padding: 0.5rem 1rem;
 }
 
-select {
-  background: inherit;
-  font-size: 14px;
-  font-family: inherit;
-  border: 1px solid #333;
-  padding: 0.5rem 0.7rem;
-  margin: 0;
+input[type='checkbox'] {
+    margin-right: 0.2rem;
 }
 
 a {
