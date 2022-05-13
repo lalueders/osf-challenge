@@ -134,14 +134,14 @@ export default function Form() {
         ></input>
       </StyledInputWrapper>
       {errors.jobTitle && <ErrorMessage>{errors.jobTitle.message}</ErrorMessage>}
-      <div>
+      <StyledCheckboxWrapper>
         <input {...register('newsletter')} type="checkbox" id="newsletter" name="newsletter" />
         <label htmlFor="newsletter">
           Ja, ich möchte von der Hermes über ihre Paket- und Serviceleistungen für Geschäftskunden (Newsletter,
           Gutscheine, Aktionen, Kundenzufriedenheitsumfragen) sowie über geschäftliche Vertragsangebote informiert
           werden.
         </label>
-      </div>
+      </StyledCheckboxWrapper>
       <StyledFormFooter>
         <p>
           <span>* </span>Pflichtfeld
@@ -171,6 +171,12 @@ const StyledSelectWrapper = styled.div`
 
 const StyledInputWrapper = styled.div`
   display: grid;
+`;
+
+const StyledCheckboxWrapper = styled.div`
+  input[type='checkbox'] {
+    margin-right: 0.2rem;
+  }
 `;
 
 const StyledButton = styled.button`
