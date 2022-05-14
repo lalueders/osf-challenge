@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import MarselisOT from './fonts/MarselisOT.otf';
 
 export default createGlobalStyle`
 
@@ -14,9 +15,12 @@ export default createGlobalStyle`
   border-width: 0;
  }
 
-@font-face {
+ @font-face {
   font-family: 'MarselisOT';
-  src: local('MarselisOT'), url(./fonts/MarselisOT.otf) format('truetype');
+        src: local('MarselisOT'), local('MarselisOT'),
+        url(${MarselisOT}) format('opentype');
+        font-weight: 300;
+        font-style: normal;
 }
 
 @media only screen and (max-width: 359px) {
@@ -85,8 +89,7 @@ export default createGlobalStyle`
 
 body {
   margin: 0;
-  font-family: 'MarselisOT', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'MarselisOT',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
